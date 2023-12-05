@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>First Application</title>
+    <!-- Programming Language-->
+    <!-- Use for operation like Addition, Calculation, Css/ Text change of control without loading page -->
+
+
+    <!-- Where to Use : 
+ Validation
+ Form Submission
+ Calculation
+ Slider
+ Menu -->
+
+    <!-- How to use Javascript in project :
+  1. using <script> tag in same file
+  2. External file whith extension ".js" 
+    Benifit to use external file :
+        1. Clean code
+        2. Code reusability -->
+
+    <!-- DataTypes :
+ Type of data.
+ Rules:
+    Variable name should be different on same page
+    Do not use Special Char while declare variable name
+ Four types of Datatype:
+    1. Automatically : No datatype, Datatype assign based on value stored.
+        Note : Do not use untill necessary
+        Ex : 
+            F_Name = "Darshit";
+                Where F_Name is variable Name
+                And Darshit is Variable value
+    2. var : Used in older browser.
+        Note : Do not use untill necessary
+        Ex : 
+           var F_Name = "Darshit";
+                Where F_Name is variable Name
+                And Darshit is Variable value
+    3. let : Used when your value is changed at runtime. Once variable is not in used remove from memory        
+        Ex : 
+           let F_Name = "Darshit";
+                Where F_Name is variable Name
+                And Darshit is Variable value
+    4. Const : Used when your value is not changed at runtime. Variable is always store in memory.
+        Ex : 
+           const F_Name = "Darshit";
+                Where F_Name is variable Name
+                And Darshit is Variable value -->
+
+    <script src="JS/first.js"></script>
+    <script>
+        // Automatically
+        f_Name = "Darshit";
+        age = 8;
+        year = 10;
+
+        total = age + year;
+
+        // var
+        var f_Name1 = "Darshit";
+
+        age1 = 10;
+        year1 = 10;
+
+        total1 = age1 + year1;
+
+        // let
+        let f_Name2 = "Darshit";
+
+        let age2 = 8;
+        let year2 = 10;
+
+        let total2 = age2 + year2;
+
+        // const
+        const f_Name3 = "Darshit";
+
+        const age3 = 8;
+        const year3 = 10;
+
+        total3 = age3 + year3;
+
+        //console.log
+        // Use for print value in console.
+        // Also used for debug the code.
+        console.log("Darshit");
+        console.log(total);
+
+        //Alert
+        // To notify user.
+        // Stop process.
+        alert("Darshit");
+        console.log("After alert");
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!-- <input type="text" placeholder="Placeholder">
+        <input type="text" value="Placeholder"> -->
+
+    <table>
+        <tr>
+            <td>
+                First Name :
+            </td>
+            <td>
+                <input type="text" placeholder="First Name">
+            </td>
+
+            <td>
+                Last Name :
+            </td>
+            <td>
+                <input type="text" placeholder="Last Name">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>First Name :</label>
+            </td>
+            <td>
+                <input type="text" placeholder="First Name">
+            </td>
+
+            <td>
+                Last Name :
+            </td>
+            <td>
+                <!-- <label>JavaScript</label> -->
+                <input type="text" placeholder="Last Name">
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
