@@ -97,11 +97,105 @@ function postOperator() {
 function forloopexample() {
     let y = 5;
 
-    document.getElementById('readonly').value = y;
-
-    let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Firday", "Saturday"]; 
+    let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Firday", "Saturday"];
 
     for (let x = 0; x < day.length; x++) { // day.length = 7
         console.log(day[x]);
     }
+}
+
+// Decrement (--) operator
+// Days print in reverse order.
+// Ex o/p :
+// Reverse weekdays
+
+// day.length = 7 - 1 = 6;
+
+// "Sunday"=0,
+// "Monday" =1, "Tuesday" = 2,
+// "Wednesday" = 3, 
+// "Thursday" = 4, 
+// "Firday" = 5, 
+// "Saturday" = 6
+
+// day[7] = undefined
+// day[6] = Saturday,
+
+function forloopwithdecrement() {
+    try {
+        let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Firday", "Saturday"];
+
+        for (let x = day.length - 1; x >= 0; x--) { // x=7; 7>=0; x--
+            console.log(day[x]);
+        }
+    }
+    catch {
+        console.log("Some error occur");
+    }
+    finally {
+        console.log("Finally block execute");
+    }
+}
+
+
+// for loop                                    do..while
+// Code execute when condition is true     Code execute one time then check condition
+// Use when condition is true only         Use when first condition should be execute.
+
+// do..while :
+
+// Syntax:
+// do{
+//     // Code block;
+// }
+// while(condition)
+
+//////////////////////////////////////////////////
+
+// While :
+//     Synatx :
+//         while(condition)
+//         {
+//             // Code block
+//         }
+
+// Example :
+
+function createlabel(x, calculatedValue) {
+    var label = document.createElement('label');
+
+    label.innerText = calculatedValue + '\n';
+
+    label.id = "lbl" + x;
+
+    document.body.appendChild(label);
+}
+
+function doWhileloop() {
+    // createlabel();
+    var x = 0;
+    do {
+        var mul = 5 * x;
+        // console.log("5 * " + x + " = " + mul);
+        var calculatedValue = "5 * " + x + " = " + mul;
+        createlabel(x, calculatedValue);
+
+        x++;
+    }
+    while (x <= 10)
+
+    // While loop
+    x = 0;
+    while (x <= 5) {
+        var mul = 5 * x;
+        console.log("5 * " + x + " = " + mul);
+
+        x++;
+    }
+
+    // for loop
+    // x = 0;
+    // for (x = 0; x <= 5; x++) {
+    //     console.log("For loop : " + x);
+    // }
 }
