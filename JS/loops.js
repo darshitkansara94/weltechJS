@@ -199,3 +199,63 @@ function doWhileloop() {
     //     console.log("For loop : " + x);
     // }
 }
+
+// foreach
+// for in
+// for of
+
+// Array :
+//Key // Value
+//  0 : 'abc',
+//  1 : 'cde',
+//  2 : 'efg',
+//  3 : 'ghi'
+
+// for in:
+// Syntax :
+//     for(variable in array)
+//     {
+//         //Code block;
+//     }
+
+// for in :
+
+function forin() {
+    let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Firday", "Saturday"];
+
+    let obj = { firstname: 'XYZ', lastname: 'abc' };
+
+    for (let x in day) {
+        console.log(x);
+        console.log(day[x]);
+    }
+
+    for (let y in obj) {
+        console.log(y);
+        console.log(obj[y]);
+    }
+}
+
+// for of :
+    // Syntax :
+    //     for(variable of array)
+    //     {
+    //         // Code
+    //     }
+
+function forof()
+{
+    let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Firday", "Saturday"];
+
+    for(let x of day)
+    {
+        console.log(x);
+    }
+
+    let str = 'WelTech';
+
+    for(let y of str)
+    {
+        console.log(y);
+    }
+}
