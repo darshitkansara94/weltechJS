@@ -98,8 +98,54 @@ function arrayPush() {
 function arrayPop() {
     arrayPushAndPop.pop();
     arrayPushAndPop.pop();
-    
+
     for (let y of arrayPushAndPop) {
+        createlabelof(y);
+    }
+}
+
+// sort :
+// Display array in asc order.
+// Return output in array only.
+
+// Syntax :
+// array.sort();
+
+// reverse :
+// Display array in reverse order.
+
+//Synatax :
+// array.reverse();
+
+let fruits = ['Mrngo', 'Apple', 'Kiwi', '06', 'Sapota', 'Mngo', '15', 'Pineapple'];
+
+// Apple , Kiwi, Mango, Pineapple, Sapota
+function sortArray() {
+    fruits.sort();
+
+    createlabelof("Sorted order of Fruits");
+
+    for (let x of fruits) {
+        createlabelof(x);
+    }
+}
+
+function reverseArray() {
+    fruits.reverse();
+
+    createlabelof("Reverse order of Fruits");
+
+    for (let y of fruits) {
+        createlabelof(y);
+    }
+}
+
+function descendingArray() {
+    fruits.sort().reverse();
+
+    createlabelof("Descending order of Fruits");
+
+    for (let y of fruits) {
         createlabelof(y);
     }
 }
