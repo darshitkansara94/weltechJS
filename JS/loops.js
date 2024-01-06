@@ -237,25 +237,52 @@ function forin() {
 }
 
 // for of :
-    // Syntax :
-    //     for(variable of array)
-    //     {
-    //         // Code
-    //     }
+// Syntax :
+//     for(variable of array)
+//     {
+//         // Code
+//     }
 
-function forof()
-{
+function createlabelof(calculatedValue) {
+    var label = document.createElement('label'); //<label></label>
+
+    label.innerText = calculatedValue + '\n'; // <label>abc</label>
+
+    // label.id = "lbl" + x;
+
+    document.body.appendChild(label);
+}
+
+function forof() {
     let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Firday", "Saturday"];
 
-    for(let x of day)
-    {
+    for (let x of day) {
         console.log(x);
     }
 
-    let str = 'WelTech';
+    let str = 'WelTechT';
 
-    for(let y of str)
-    {
+    for (let y of str) {
+        createlabelof(y);
         console.log(y);
     }
+}
+
+function multi(varsha,Alisha) {
+    console.log();
+}
+
+function abc() //Default function
+{
+    let str = 'Vadodara';
+    let str2 = 'Vadodara';
+
+    multi(str,str2); //multi('Vadodara');
+}
+
+function cde() //Default function
+{
+    let str1 = 'Mumbai';
+
+    multi(str1); //multi('Mumbai');
 }
