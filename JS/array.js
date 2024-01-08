@@ -90,6 +90,8 @@ function arrayPush() {
 
     arrayPushAndPop.push('value5', 'value6');
 
+    // arrayPushAndPop[3] = 'value7';
+
     for (let x of arrayPushAndPop) {
         createlabelof(x);
     }
@@ -117,7 +119,7 @@ function arrayPop() {
 //Synatax :
 // array.reverse();
 
-let fruits = ['Mrngo', 'Apple', 'Kiwi', '06', 'Sapota', 'Mngo', '15', 'Pineapple'];
+let fruits = ['Mango', 'Apple', 'Kiwi', 'Sapota', 'Pineapple'];
 
 // Apple , Kiwi, Mango, Pineapple, Sapota
 function sortArray() {
@@ -149,3 +151,116 @@ function descendingArray() {
         createlabelof(y);
     }
 }
+
+//Merge:
+// Concatnation of array using plus icon
+
+let vegetables = ['Tomato', 'Potato', 'Onion', 'Ginger'];
+
+function mergeArray() {
+    let mergedArray = fruits.concat(vegetables);
+
+    for (let x of mergedArray) {
+        createlabelof(x);
+    }
+}
+
+//Splice:
+//Remove element from the array at specific index
+
+//Syntax :
+// array.splice(index);
+// array.splice(index, deletecount);
+
+function spliceArray() {
+    fruits.splice(2, 1);
+
+    for (let x of fruits) {
+        createlabelof(x);
+    }
+}
+
+// Update value in existing array:
+// we can update value in exisiting array using the index of array
+
+//Syntax:
+// array[index] = 'value'
+
+function updateArray() {
+    fruits[2] = 'Guava';
+
+    createlabelof("Update array at index 2");
+
+    for (let x of fruits) {
+        createlabelof(x);
+    }
+}
+
+// Array Assignment
+
+// 1. Text box create.
+// 2. Get value from Textbox.
+// 3. Create blank array.
+// 4. Add textbox value into array.
+// 5. Create label.
+
+let assiArray = [];
+
+function AddValueToArray() {
+    let txtArrayValue = document.getElementById('txtArrayValue').value;
+
+    assiArray.push(txtArrayValue);
+
+    createlabelof("Value push to Array");
+
+    for (let x of assiArray) {
+        createlabelof(x);
+    }
+}
+
+function RemoveValueToArray() {
+    assiArray.pop();
+
+    createlabelof("Value pop from Array");
+
+    for (let y of assiArray) {
+        createlabelof(y);
+    }
+}
+
+// Slice :
+// Used for remove value from array but not affect actual array.
+// It is not change value of actual array.
+
+// Syntax :
+// array.slice(index, element of no to be delete);
+// array.slice(index);
+
+//Actual Array
+let fruitsSlice = ['Mango', 'Apple', 'Kiwi', 'Sapota', 'Pineapple'];
+
+function sliceArray() {
+    const fruitsNewSlice = fruitsSlice.slice(1,3);
+
+    createlabelof("Array after Slice : ");
+
+    for (let x of fruitsSlice) {
+        createlabelof(x);
+    }
+
+    createlabelof("Value of splice : ");
+
+    for (let z of fruitsNewSlice) {
+        createlabelof(z);
+    }
+
+    fruitsSlice.splice(1, 3);
+
+    createlabelof("Array after Splice : ");
+
+    for (let y of fruitsSlice) {
+        createlabelof(y);
+    }
+}
+
+// join
