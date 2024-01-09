@@ -240,7 +240,7 @@ function RemoveValueToArray() {
 let fruitsSlice = ['Mango', 'Apple', 'Kiwi', 'Sapota', 'Pineapple'];
 
 function sliceArray() {
-    const fruitsNewSlice = fruitsSlice.slice(1,3);
+    const fruitsNewSlice = fruitsSlice.slice(1, 3);
 
     createlabelof("Array after Slice : ");
 
@@ -263,4 +263,24 @@ function sliceArray() {
     }
 }
 
-// join
+// join :
+// Used to add value between two values in array.
+
+// Synatax:
+// array.join();
+// array.join(Value to be add);
+// Ex : 
+//let array2 = ['Javascript', 'SQL','C#'];    
+// o/p : Javascript and SQL and c#
+
+function joinArray() {
+    try {
+        let joinedFruits = fruits.join('/');
+
+        createlabelof(joinedFruits);
+    }
+    catch (msg) {
+        createlabelof(msg);
+    }
+}
+

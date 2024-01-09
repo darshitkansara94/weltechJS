@@ -26,7 +26,7 @@ console.log("Error Handling JS");
 // All the logic of your code will be add in try block.
 // If any error occur in try block then pointer move to the catch part and display error message if we declare a variable.
 try {
-    const abc = "";
+    const abc = "abc";
 
     if(abc == ""){
         // It throw error and debug move to the catch block and display message if given.
@@ -34,7 +34,7 @@ try {
         throw new Error("abc can not be blank");
     }
     // function
-    // function erroredfunction(){}
+    function erroredfunction(){}
     erroredfunction();
 }
 // catch block execute when any error found in try block /  section.
