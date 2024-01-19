@@ -2,11 +2,17 @@
 
 <head>
     <script src="JS/rollovers.js"></script>
+    <link rel="stylesheet" href="css/rollover.css">
 </head>
 
 <body>
     <input type="text" id="txtName" onmouseenter="printFirstNameText()" onmouseout="mouseOut()">
-    <input type="text" id="txtLastName" on onmouseover="mouseOver()" onmouseleave="mouseLeave()">
+    <input type="text" id="txtLastName" onmouseover="mouseOver()" onmouseleave="mouseLeave()">
+    <input type="text" id="txtFocus" onfocus="onFocus()" onblur="onBlur()">
+
+
+    <button type="button" id="btnSave" class="buttonhtml" onmouseover="buttonHover()">Save</button>
+    <button type="button" id="btnClear" class="buttonhtml" onmouseover="buttonclasslist()">Clear</button>
 </body>
 
 </html>
