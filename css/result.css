@@ -1,0 +1,13 @@
+table {
+    border: 2px solid black;
+}
+
+.pass {
+    background-color: green;
+    color: white;
+}
+
+.fail {
+    background-color: red;
+    color: white;
+}
