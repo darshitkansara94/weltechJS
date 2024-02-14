@@ -1,0 +1,11 @@
+.thumbnail {
+   border: 2px solid grey;  
+   margin-right: 10px; 
+   cursor: pointer;
+}
+
+.centerThumbnail{
+    display: flex;
+    justify-content: center;
+    border: 2px solid darkgray;
+}
