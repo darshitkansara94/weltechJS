@@ -11,6 +11,7 @@
 // For multiple collection:
 //const object1 = [{},{},...,{}];    
 
+Date()
 
 // Example:
 const Employee = {
@@ -28,4 +29,32 @@ console.log('Name : ' + Employee.Name + 'Age : ' + Employee.Age + 'Address : ' +
 
 for (let emp in Employee) {
     console.log(emp + ' = ' + Employee[emp]);
+}
+
+debugger;
+const EmployeeMultiple = [{
+    Name: 'Darshit Kansara',
+    Age: '29',
+    Address: 'Vadodara',
+    EmployeeID: '1234',
+    MobileNo: '79896645656',
+    Position: 'Developer',
+    Education: 'B.Tech',
+    Salary: '5425545'
+},
+{
+    Name: 'Weltech',
+    Age: '29',
+    Address: 'Vadodara',
+    EmployeeID: '5252',
+    MobileNo: '252615116',
+    Position: 'Class',
+    Education: 'Study',
+    Salary: '552669'
+}
+];
+
+
+for (const empcolletion in EmployeeMultiple) {
+    console.log(EmployeeMultiple[empcolletion]);
 }
